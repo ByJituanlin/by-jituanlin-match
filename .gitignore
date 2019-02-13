@@ -2,9 +2,7 @@ node_modules
 build
 src/**.js
 .idea/*
-
+.vscode/*
 coverage
 .nyc_output
 *.log
-
-package-lock.json

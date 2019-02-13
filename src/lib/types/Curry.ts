@@ -24,10 +24,12 @@ interface Curry4<A, B, C, D, R> {
   (a: A, b: B, c: C, d: D): R;
 }
 
-export type VariadicCurry<T, R> =
-  T extends [any, any, any, any] ? Curry4<T[0], T[1], T[2], T[3], R> :
-    T extends [any, any, any] ? Curry3<T[0], T[1], T[2], R> :
-      T extends [any, any] ? Curry2<T[0], T[1], R> :
-        T extends [any] ? Curry1<T[0], R> :
-          unknown
-
+export type VariadicCurry<T, R> = T extends [any, any, any, any]
+  ? Curry4<T[0], T[1], T[2], T[3], R>
+  : T extends [any, any, any]
+  ? Curry3<T[0], T[1], T[2], R>
+  : T extends [any, any]
+  ? Curry2<T[0], T[1], R>
+  : T extends [any]
+  ? Curry1<T[0], R>
+  : unknown;
