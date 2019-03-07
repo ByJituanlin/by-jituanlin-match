@@ -4,7 +4,7 @@
 
 A convenient function as an alternative to the switch statement.
 
-## Why
+## Why and How
 
 <table>
 <tr>
@@ -37,6 +37,8 @@ switch (value) {
 
 <td>
 <pre>
+// The match function call is a expression,
+// you can use it directly in jsx
 <<span>div</span>>
   {match(value)(
        [1, 'one'],
@@ -62,6 +64,8 @@ switch (value) {
 
 <td>
 <pre>
+// Support for parameters of function types.
+// Its return value will be used as the return value of the match function.
 match(value)(
   [_.isArray,doSomething],
   [_.isNumber,doAnotherThing]
@@ -88,6 +92,8 @@ switch (value) {
 
 <td>
 <pre>
+// If the branch does not match (or returns null),
+// subsequent branches will continue to be performed
 match(value)(
   [1,match(anotherValue)(
       [2, 'one then two'])
