@@ -1,11 +1,11 @@
 {
-  "name": "pragmatic-functions",
+  "name": "match",
   "version": "1.0.0",
-  "description": "todo",
+  "description": "A convenient function as an alternative to the switch statement",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
-  "repository": "https://github.com/ByJituanlin/pragmatic-functions.git",
+  "repository": "https://github.com/jituanlin/by-jituanlin_match.git",
   "license": "MIT",
   "keywords": [],
   "scripts": {

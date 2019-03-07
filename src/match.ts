@@ -1,4 +1,4 @@
-import { AnyFunction } from './types';
+type AnyFunction = (...args: any[]) => any;
 
 type NotFunction<T> = Exclude<T, AnyFunction>;
 
@@ -84,3 +84,6 @@ const match = <T>(value: T & NotFunction<T>) => <
 };
 
 export default match;
+
+// @ts-ignore
+export const stubTrue = (...args:any[]): true => true;

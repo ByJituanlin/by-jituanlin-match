@@ -40,3 +40,11 @@ test('match function:  with nested match', () => {
     )
   ).toBe(true);
 });
+
+doSomething(
+  match(value)(
+    [1, 'one'],
+    [2, 'two'],
+    [stubTrue, 'forty-two']
+  )
+);
