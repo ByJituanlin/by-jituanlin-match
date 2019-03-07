@@ -1,4 +1,4 @@
-# @by-jituanlin/match
+# by-jituanlin-match
 
 ## What is
 
@@ -104,3 +104,11 @@ match(value)(
 </td>
 </tr>
 </table>
+
+## Install and Import
+install: `npm install by-jituanlin-match` or
+ `yarn add by-jituanlin-match`
+
+then `import {stubTrue,match} from 'by-jituanlin-match'` or
+
+ `const {stubTrue,match} = require('by-jituanlin-match')` 

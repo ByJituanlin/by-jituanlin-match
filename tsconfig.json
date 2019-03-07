@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
-    "target": "es2017",
+    "target": "es5",
     "outDir": "build/main",
     "rootDir": "src",
     "moduleResolution": "node",
-    "module": "commonjs",
+    "module": "UMD",
     "declaration": true,
     "inlineSourceMap": true,
     "esModuleInterop": true
@@ -47,7 +47,7 @@
     // "emitDecoratorMetadata": true /* Enables experimental support for emitting type metadata for decorators. */,
 
     "lib": [
-      "es2017"
+      "es5"
     ],
     "types": [],
     "typeRoots": [

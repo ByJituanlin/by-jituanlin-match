@@ -1,6 +1,6 @@
 import 'jest';
 import * as R from 'ramda';
-import match from './match';
+import {match} from './index';
 
 test('match function:  with value as predicate type and value as action', () => {
   expect(match(1)([2, 'two'], [1, 'one'])).toBe('one');
@@ -40,11 +40,3 @@ test('match function:  with nested match', () => {
     )
   ).toBe(true);
 });
-
-doSomething(
-  match(value)(
-    [1, 'one'],
-    [2, 'two'],
-    [stubTrue, 'forty-two']
-  )
-);

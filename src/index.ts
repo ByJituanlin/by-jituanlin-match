@@ -83,7 +83,7 @@ const match = <T>(value: T & NotFunction<T>) => <
   return null;
 };
 
-export default match;
+export { match };
 
 // @ts-ignore
-export const stubTrue = (...args:any[]): true => true;
+export const stubTrue = (...args: any[]): true => true;
