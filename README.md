@@ -37,8 +37,7 @@ switch (value) {
 
 <td>
 <pre>
-// The match function call is a expression,
-// you can use it directly in jsx
+<a href="#expression">see detail<sup>1</sup><a/>
 <<span>div</span>>
   {match(value)(
        [1, 'one'],
@@ -64,8 +63,7 @@ switch (value) {
 
 <td>
 <pre>
-// Support for parameters of function types.
-// Its return value will be used as the return value of the match function.
+<a href="#parameter-type">see detail<sup>2</sup><a/>
 match(value)(
   [_.isArray,doSomething],
   [_.isNumber,doAnotherThing]
@@ -92,8 +90,7 @@ switch (value) {
 
 <td>
 <pre>
-// If the branch does not match (or returns null),
-// subsequent branches will continue to be performed
+<a href="#nested">see detail<sup>3</sup><a/>
 match(value)(
   [1,match(anotherValue)(
       [2, 'one then two'])
@@ -104,6 +101,15 @@ match(value)(
 </td>
 </tr>
 </table>
+
+## Detail
+1. <a name="expression">The match function call is a expression,you can use it directly in jsx </a>
+
+2. <a name="parameter-type">Match function support for parameters of function types.
+                     Its return value will be used as the return value of the match function. </a>
+
+3. <a name="nested">If the branch does not match (or returns null),subsequent branches will continue to be performed</a>
+
 
 ## Install and Import
 install: `npm install by-jituanlin-match` or
