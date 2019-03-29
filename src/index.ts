@@ -2,7 +2,7 @@ type AnyFunction = (...args: any[]) => any;
 
 type NotFunction<T> = Exclude<T, AnyFunction>;
 
-const match = <T>(value: T & NotFunction<T>) => <
+export const match = <T>(value: T & NotFunction<T>) => <
   R0,
   R1 = never,
   R2 = never,
@@ -82,8 +82,6 @@ const match = <T>(value: T & NotFunction<T>) => <
   }
   return null;
 };
-
-export { match };
 
 // @ts-ignore
 export const stubTrue = (...args: any[]): true => true;
